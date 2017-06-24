@@ -1,7 +1,12 @@
+var taskCount = 0;
+
+$("#input").attr("maxlength", "35");
+
+$("#add").click(addToList);
+
 function addToList() {
 	if ($("#input").val() != "") {
 		var task = document.createElement('div');
-		//$(task).attr("class", "myTask");
 		$(task).html($("#input").val());
 		$(task).css({
 			"width": "95%",
@@ -15,10 +20,10 @@ function addToList() {
 		});
 		
 		var del = document.createElement('button');
-		//$(del).attr("class", "myDel");
 		$(del).html("Del");
 		$(del).css({
 			"width": "10%",
+			"min-width": "34px",
 			"height": "30px",
 			"float": "right"
 		});
@@ -26,14 +31,16 @@ function addToList() {
 		$(task).append(del);
 		$("#taskList").append(task);
 		
+		if (++taskCount > 1) {
+			var curHeight = $("#taskList").css("#height");
+			$("#taskList").css({
+				"height": curHeight + 50
+			});
+		}
+
 		$(del).click(function() {
-			del.remove();
 			task.remove();
+			taskCount--;
 		});
 	}
 }
-
-
-$("#input").attr("maxlength", "35");
-
-$("#add").click(addToList);
