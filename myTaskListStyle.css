@@ -21,7 +21,9 @@
 	float: right;
 	position: relative;
 	right: 30px;
+	left: 1px;
 	width: 10%;
+	min-width: 45px;
 	height: 35px;
 	margin-top: 7px;
 }
@@ -31,6 +33,7 @@
 	border-style: solid;
 	border-color: green;
 	width: 40%;
+	min-width: 225px;
 	height: 800px;
 	margin: 25px;
 }
