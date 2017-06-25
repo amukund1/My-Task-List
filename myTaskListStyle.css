@@ -17,6 +17,18 @@
 	font-size: 200%;
 }
 
+#listTitleDiv {
+	margin: 25px;
+	width: 40%;
+	min-width: 225px;
+}
+
+#listTitleText{
+	text-align: center;
+	color: green;
+	font-family: sans-serif;
+}
+
 #add {
 	float: right;
 	position: relative;
