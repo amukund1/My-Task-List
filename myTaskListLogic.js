@@ -1,3 +1,10 @@
+$("#calendar").datepicker({
+	showButtonPanel: true,
+	onSelect: function(date) {
+		alert(date);
+	}
+});
+
 var taskCount = 0;
 
 $("#input").attr("maxlength", "35");

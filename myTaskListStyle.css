@@ -17,6 +17,10 @@
 	font-size: 200%;
 }
 
+#container {
+	overflow: hidden;
+}
+
 #listTitleDiv {
 	margin: 25px;
 	width: 40%;
@@ -41,6 +45,7 @@
 }
 
 #taskList {
+	float: left;
 	display: block;
 	border-style: solid;
 	border-color: green;
@@ -48,4 +53,13 @@
 	min-width: 225px;
 	min-height: 50px;
 	margin: 25px;
+}
+
+#calendar {
+	position: relative;
+	float: left;
+	left: 12.5%;
+	width: 53%;
+	height: 525px;
+	font-size: 300%;
 }
