@@ -31,6 +31,8 @@ function addToList() {
 		$(task).append(del);
 		$("#taskList").append(task);
 		
+		$("#input").val(""); 
+		
 		if (++taskCount > 1) {
 			var curHeight = $("#taskList").css("#height");
 			$("#taskList").css({
