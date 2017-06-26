@@ -19,18 +19,20 @@
 
 #container {
 	overflow: hidden;
+	margin-top: 10px;
 }
 
 #listTitleDiv {
-	margin: 25px;
 	width: 40%;
 	min-width: 225px;
+	height: 30px;
 }
 
 #listTitleText{
 	text-align: center;
 	color: green;
 	font-family: sans-serif;
+	margin-left: 35px;
 }
 
 #add {
@@ -57,9 +59,9 @@
 
 #calendar {
 	position: relative;
+	overflow: hidden;
 	float: left;
 	left: 12.5%;
 	width: 53%;
 	height: 525px;
 	font-size: 300%;
-}
